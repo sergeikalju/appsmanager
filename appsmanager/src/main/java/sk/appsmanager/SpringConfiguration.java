@@ -32,7 +32,7 @@ import sk.appsmanager.service.validator.ServiceValidatorImpl;
 @Configuration
 public class SpringConfiguration {
      private static final String DATASOURCE_PROPERTIES = "jdbc"; 
-     private static final String SOLR_URL = "http://localhost:8983/solr/test_core";
+     private static final String SOLR_URL = "http://mySolr:8983/solr/test_core";
 
     @Bean
     public DataSource getDataSource() {

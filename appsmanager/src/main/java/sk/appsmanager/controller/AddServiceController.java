@@ -61,7 +61,7 @@ public class AddServiceController {
 
         try (AnnotationConfigApplicationContext context = 
                 new AnnotationConfigApplicationContext(SpringConfiguration.class)) {
-            if (appServiceService.register(service) > 0 ) {
+            if (appServiceService.register(service) > 0) {
                 HttpSolrClient solrClient = context.getBean("getSolrClient", HttpSolrClient.class);
                 ModifiableSolrParams params = new ModifiableSolrParams();
                 params.set("qt", "/dataimport");
